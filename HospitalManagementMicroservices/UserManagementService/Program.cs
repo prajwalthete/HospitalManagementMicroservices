@@ -1,6 +1,12 @@
+using UserManagementService.Context;
+using UserManagementService.Interface;
+using UserManagementService.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<UserManagementServiceContext>();
+builder.Services.AddScoped<IUser, UserService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
