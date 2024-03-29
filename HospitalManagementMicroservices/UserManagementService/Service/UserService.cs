@@ -99,6 +99,35 @@ namespace UserManagementService.Service
             return Regex.IsMatch(email, pattern);
         }
 
+        public async Task<string> UserLogin(UserLoginModel userLogin)
+        {
+            using (var connection = _context.CreateConnection())
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("Email", userLogin.Email);
+
+
+                string query = @"
+                        SELECT * FROM Users WHERE Email = @Email ;
+                       ";
+
+
+                var user = await connection.QueryFirstOrDefaultAsync<UserLoginModel>(query, parameters);
+
+                if (user == null)
+                {
+                    throw new UserNotFoundException($"User with email '{userLogin.Email}' not found.");
+                }
+
+                if (!BCrypt.Net.BCrypt.Verify(userLogin.Password, user.Password))
+                {
+                    throw new InvalidPasswordException($"User with Password '{userLogin.Password}' not Found.");
+                }
+
+                return "Login Successful";
+            }
+        }
+
 
     }
 }

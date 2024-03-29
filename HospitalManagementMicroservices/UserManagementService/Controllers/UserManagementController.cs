@@ -47,7 +47,6 @@ namespace UserManagementService.Controllers
                         Message = ex.Message
                     };
                     return BadRequest(response);
-                    // return BadRequest("User with given email already exists");
 
                 }
                 else if (ex is InvalidEmailFormatException)
@@ -67,6 +66,61 @@ namespace UserManagementService.Controllers
                 }
             }
         }
+
+
+
+        [HttpPost("login")]
+        public async Task<IActionResult> UserLogin(UserLoginModel userLogin)
+        {
+            try
+            {
+                // Authenticate the user and generate JWT token
+                var result = await _user.UserLogin(userLogin);
+
+                var response = new ResponseModel<UserLoginModel>
+                {
+
+                    Message = "Login Sucessfull",
+
+                };
+                return Ok(response);
+
+            }
+            catch (Exception ex)
+            {
+                if (ex is UserNotFoundException)
+                {
+                    var response = new ResponseModel<UserLoginModel>
+                    {
+
+                        Success = false,
+                        Message = ex.Message
+
+                    };
+                    return Conflict(response);
+
+                }
+                else if (ex is InvalidPasswordException)
+                {
+                    var response = new ResponseModel<UserLoginModel>
+                    {
+
+                        Success = false,
+                        Message = ex.Message
+
+                    };
+                    return BadRequest(response);
+                }
+                else
+                {
+                    return StatusCode(500, $"An error occurred while processing the login request: {ex.Message}");
+
+                }
+            }
+
+        }
+
+
 
 
     }
