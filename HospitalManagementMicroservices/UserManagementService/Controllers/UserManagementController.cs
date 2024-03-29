@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
+﻿using Microsoft.AspNetCore.Mvc;
 using UserManagementService.Dto;
 using UserManagementService.GlobleExceptionhandler;
 using UserManagementService.Interface;
@@ -124,34 +122,72 @@ namespace UserManagementService.Controllers
         }
 
 
-        [Authorize]
-        [HttpGet("protected")]
-        public IActionResult ProtectedEndpoint(string expectedUserEmail)
+
+        [HttpPost("ForgetPassword")]
+        public async Task<IActionResult> ForgetPassword(ForgetPasswordModel forgetPasswordModel)
         {
-            // Extract user Email and UserId claims from the token
-            var userEmailClaim = User.FindFirstValue(ClaimTypes.Email);
-            var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            if (userEmailClaim == null)
+            try
             {
-                return Unauthorized("Invalid token");
-            }
-            if (userIdClaim == null)
-            {
-                return Unauthorized("Invalid token");
-            }
 
-            // Compare the user email and Id from the token with the expected values
-            if (!expectedUserEmail.Equals(userEmailClaim))
-            {
-                return Unauthorized("You are not authorized to access this resource.");
-            }
+                string Token = await _user.ForgetPassword(forgetPasswordModel);
 
-            // This endpoint can only be accessed with a valid JWT token and the correct user email
-            return Ok("Welcome to the Microservices World!");
+                //HttpContext.Response.Headers.Add("Authorization", $"Bearer {Token}");
+
+                if (Token != null)
+                {
+                    var response = new ResponseModel<string>
+                    {
+                        Success = true,
+                        Message = "Email sent successfully.",
+                        // Data = Token
+
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    var response = new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "Failed to send email.",
+                        Data = null
+                    };
+                    return BadRequest(response);
+                }
+            }
+            catch (UserNotFoundException ex)
+            {
+                var response = new ResponseModel<string>
+                {
+
+                    Success = false,
+                    Message = $"Error sending email: {ex.Message}",
+                    Data = null
+                };
+                return StatusCode(500, response);
+            }
+            catch (EmailSendingException ex)
+            {
+                var response = new ResponseModel<string>
+                {
+
+                    Success = false,
+                    Message = $"Error sending email: {ex.Message}",
+                    Data = null
+                };
+                return StatusCode(500, response);
+            }
+            catch (Exception ex)
+            {
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = $"An unexpected error occurred: {ex.Message}",
+                    Data = null
+                };
+                return StatusCode(500, response);
+            }
         }
-
-
 
 
     }

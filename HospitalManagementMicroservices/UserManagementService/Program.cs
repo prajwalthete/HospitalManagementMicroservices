@@ -3,6 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using UserManagementService.Context;
+using UserManagementService.Dto;
 using UserManagementService.Interface;
 using UserManagementService.Service;
 
@@ -11,7 +12,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddSingleton<UserManagementServiceContext>();
 builder.Services.AddScoped<IUser, UserService>();
+
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IEmail, EmailServiceRL>();
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
+
 
 // Get the secret key from the configuration
 var key = Encoding.ASCII.GetBytes(builder.Configuration["JwtSettings:Secret"]);
@@ -82,3 +89,4 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
+
