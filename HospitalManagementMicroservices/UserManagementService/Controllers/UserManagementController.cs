@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using UserManagementService.Dto;
 using UserManagementService.GlobleExceptionhandler;
 using UserManagementService.Interface;
@@ -75,12 +77,13 @@ namespace UserManagementService.Controllers
             try
             {
                 // Authenticate the user and generate JWT token
-                var result = await _user.UserLogin(userLogin);
+                var Token = await _user.UserLogin(userLogin);
 
-                var response = new ResponseModel<UserLoginModel>
+                var response = new ResponseModel<string>
                 {
 
                     Message = "Login Sucessfull",
+                    Data = Token
 
                 };
                 return Ok(response);
@@ -118,6 +121,34 @@ namespace UserManagementService.Controllers
                 }
             }
 
+        }
+
+
+        [Authorize]
+        [HttpGet("protected")]
+        public IActionResult ProtectedEndpoint(string expectedUserEmail)
+        {
+            // Extract user Email and UserId claims from the token
+            var userEmailClaim = User.FindFirstValue(ClaimTypes.Email);
+            var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (userEmailClaim == null)
+            {
+                return Unauthorized("Invalid token");
+            }
+            if (userIdClaim == null)
+            {
+                return Unauthorized("Invalid token");
+            }
+
+            // Compare the user email and Id from the token with the expected values
+            if (!expectedUserEmail.Equals(userEmailClaim))
+            {
+                return Unauthorized("You are not authorized to access this resource.");
+            }
+
+            // This endpoint can only be accessed with a valid JWT token and the correct user email
+            return Ok("Welcome to the Microservices World!");
         }
 
 

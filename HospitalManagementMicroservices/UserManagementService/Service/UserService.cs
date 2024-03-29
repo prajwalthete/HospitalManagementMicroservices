@@ -3,6 +3,7 @@ using System.Data;
 using System.Text.RegularExpressions;
 using UserManagementService.Context;
 using UserManagementService.Dto;
+using UserManagementService.Entity;
 using UserManagementService.GlobleExceptionhandler;
 using UserManagementService.Interface;
 
@@ -11,10 +12,12 @@ namespace UserManagementService.Service
     public class UserService : IUser
     {
         private readonly UserManagementServiceContext _context;
+        private readonly IAuthService _authService;
 
-        public UserService(UserManagementServiceContext context)
+        public UserService(UserManagementServiceContext context, IAuthService authService)
         {
             _context = context;
+            _authService = authService;
         }
 
         public async Task<bool> RegisterUser(UserRegistrationModel userRegModel)
@@ -92,13 +95,6 @@ namespace UserManagementService.Service
             return true;
         }
 
-        private bool IsValidEmail(string email)
-        {
-            // string pattern = @"^[a-zA-Z]([\w]|\.[\w]+)\@[a-zA-Z0-9]+\.[a-z]{2,3}$";
-            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
-            return Regex.IsMatch(email, pattern);
-        }
-
         public async Task<string> UserLogin(UserLoginModel userLogin)
         {
             using (var connection = _context.CreateConnection())
@@ -112,7 +108,7 @@ namespace UserManagementService.Service
                        ";
 
 
-                var user = await connection.QueryFirstOrDefaultAsync<UserLoginModel>(query, parameters);
+                var user = await connection.QueryFirstOrDefaultAsync<UserEntity>(query, parameters);
 
                 if (user == null)
                 {
@@ -123,11 +119,18 @@ namespace UserManagementService.Service
                 {
                     throw new InvalidPasswordException($"User with Password '{userLogin.Password}' not Found.");
                 }
+                //if password enterd from user and password in db match then generate Token 
+                var token = _authService.GenerateJwtToken(user);
+                return token;
 
-                return "Login Successful";
             }
         }
-
+        private bool IsValidEmail(string email)
+        {
+            // string pattern = @"^[a-zA-Z]([\w]|\.[\w]+)\@[a-zA-Z0-9]+\.[a-z]{2,3}$";
+            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+            return Regex.IsMatch(email, pattern);
+        }
 
     }
 }
