@@ -94,8 +94,7 @@
               "RelativeToolTip": "UserManagementService\\Dto\\ForgetPasswordModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T12:10:21.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T12:10:21.034Z"
             },
             {
               "$type": "Document",
@@ -107,8 +106,7 @@
               "RelativeToolTip": "UserManagementService\\Service\\AuthService.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAowB8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T11:16:39.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T11:16:39.515Z"
             },
             {
               "$type": "Document",
@@ -120,8 +118,7 @@
               "RelativeToolTip": "UserManagementService\\Service\\EmailServiceRL.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAgwAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T11:07:23.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T11:07:23.21Z"
             },
             {
               "$type": "Document",
@@ -133,8 +130,7 @@
               "RelativeToolTip": "UserManagementService\\Program.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T10:40:04.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T10:40:04.557Z"
             },
             {
               "$type": "Document",
@@ -144,10 +140,9 @@
               "RelativeDocumentMoniker": "UserManagementService\\Service\\UserService.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\UserService.cs",
               "RelativeToolTip": "UserManagementService\\Service\\UserService.cs",
-              "ViewState": "AQIAAJsAAAAAAAAAAAAAAM0AAAAAAAAA",
+              "ViewState": "AQIAAN0AAAAAAAAAAAAuwMMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T08:09:59.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T08:09:59.519Z"
             },
             {
               "$type": "Document",
@@ -159,8 +154,7 @@
               "RelativeToolTip": "UserManagementService\\Interface\\IUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T08:14:44.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T08:14:44.508Z"
             },
             {
               "$type": "Document",
@@ -170,7 +164,7 @@
               "RelativeDocumentMoniker": "UserManagementService\\appsettings.json",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\appsettings.json",
               "RelativeToolTip": "UserManagementService\\appsettings.json",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAVAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-29T09:37:27.052Z",
               "EditorCaption": ""
@@ -183,10 +177,9 @@
               "RelativeDocumentMoniker": "UserManagementService\\Controllers\\UserManagementController.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Controllers\\UserManagementController.cs",
               "RelativeToolTip": "UserManagementService\\Controllers\\UserManagementController.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAQwI0AAAAnAAAA",
+              "ViewState": "AQIAALYAAAAAAAAAAAAmwPAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T08:08:58.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T08:08:58.307Z"
             },
             {
               "$type": "Document",
@@ -198,8 +191,7 @@
               "RelativeToolTip": "UserManagementService\\Dto\\EmailSettings.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T12:15:31.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T12:15:31.349Z"
             },
             {
               "$type": "Document",
@@ -211,8 +203,7 @@
               "RelativeToolTip": "UserManagementService\\Interface\\IAuthService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T09:40:34.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T09:40:34.514Z"
             },
             {
               "$type": "Document",
@@ -224,8 +215,7 @@
               "RelativeToolTip": "UserManagementService\\Interface\\IEmail.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T11:06:39.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T11:06:39.532Z"
             },
             {
               "$type": "Document",
@@ -237,8 +227,7 @@
               "RelativeToolTip": "UserManagementService\\GlobleExceptionhandler\\UserNotFoundException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T10:26:22.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T10:26:22.084Z"
             },
             {
               "$type": "Document",
@@ -250,8 +239,7 @@
               "RelativeToolTip": "UserManagementService\\Context\\UserManagementServiceContext.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAzwBQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T08:21:56.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T08:21:56.386Z"
             }
           ]
         }

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using UserManagementService.Dto;
 using UserManagementService.GlobleExceptionhandler;
 using UserManagementService.Interface;
@@ -188,6 +190,63 @@ namespace UserManagementService.Controllers
                 return StatusCode(500, response);
             }
         }
+
+        [Authorize]
+        [HttpPost("ResetPassword")]
+        public async Task<IActionResult> ResetPassword(ResetPasswordModel resetPasswordModel)
+        {
+            try
+            {
+                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                int UserId = Convert.ToInt32(userIdClaim);
+                bool isPassWordReset = await _user.ResetPassword(resetPasswordModel.NewPassword, UserId);
+
+                var response = new ResponseModel<bool>
+                {
+
+                    Success = true,
+                    Message = "Password reset successfully",
+                    Data = isPassWordReset
+                };
+
+                return Ok(response);
+            }
+            catch (UserNotFoundException ex)
+            {
+                var response = new ResponseModel<bool>
+                {
+
+                    Success = false,
+                    Message = ex.Message,
+                    Data = false
+                };
+
+                return NotFound(response);
+            }
+            catch (RepositoryException ex)
+            {
+                var response = new ResponseModel<bool>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = false
+                };
+
+                return StatusCode(500, response);
+            }
+            catch (Exception ex)
+            {
+                var response = new ResponseModel<bool>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = false
+                };
+
+                return StatusCode(500, response);
+            }
+        }
+
 
 
     }

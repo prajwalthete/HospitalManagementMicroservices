@@ -195,6 +195,54 @@ public class UserService : IUser
         }
     }
 
+    public async Task<bool> ResetPassword(string NewPassword, int UserId)
+    {
+        try
+        {
+            var query = @"
+                               SELECT *
+                               FROM Users
+                               WHERE UserId = @UserId;
+                                ";
+
+            using (var connection = _context.CreateConnection())
+            {
+
+                var user = await connection.QueryFirstOrDefaultAsync<UserRegistrationModel>(query, new { UserId = UserId });
+
+                if (user == null)
+                {
+                    throw new UserNotFoundException($"User with ID '{UserId}' not found.");
+                }
+
+
+                string hashedPassword = BCrypt.Net.BCrypt.HashPassword(NewPassword);
+
+
+                user.Password = hashedPassword;
+
+
+
+                var updateQuery = @"
+                                       UPDATE Users
+                                       SET Password = @Password
+                                       WHERE UserId = @UserId;
+                                        ";
+
+                await connection.ExecuteAsync(updateQuery, new { Password = hashedPassword, UserId = UserId });
+
+                return true;
+            }
+        }
+        catch (Exception ex)
+        {
+
+            throw new RepositoryException("An error occurred while resetting the password.", ex);
+        }
+    }
+
+
+
     private bool IsValidEmail(string email)
     {
         string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
