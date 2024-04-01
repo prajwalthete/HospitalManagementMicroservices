@@ -247,6 +247,44 @@ namespace UserManagementService.Controllers
             }
         }
 
+        [Authorize]
+        [HttpPost("UpdateProfile")]
+        public async Task<IActionResult> UpdateProfile(UserRegistrationModel userRegistrationModel)
+        {
+            try
+            {
+                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                int UserId = Convert.ToInt32(userIdClaim);
+                // Call the UpdateProfile method from the UserService
+                var success = await _user.UpdateProfile(userRegistrationModel, UserId);
+
+                if (success)
+                {
+                    // Return success response if profile update is successful
+                    return Ok(new { Success = true, Message = "User profile updated successfully." });
+                }
+                else
+                {
+                    // Return error response if profile update fails
+                    return BadRequest(new { Success = false, Message = "Failed to update user profile." });
+                }
+            }
+            catch (ArgumentNullException ex)
+            {
+                // Handle ArgumentNullException
+                return BadRequest(new { Success = false, Message = ex.Message });
+            }
+            catch (RepositoryException ex)
+            {
+                // Handle RepositoryException
+                return StatusCode(500, new { Success = false, Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                // Handle any other exceptions
+                return StatusCode(500, new { Success = false, Message = "An unexpected error occurred." });
+            }
+        }
 
 
     }

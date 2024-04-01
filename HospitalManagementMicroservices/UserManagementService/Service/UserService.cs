@@ -249,5 +249,59 @@ public class UserService : IUser
         return Regex.IsMatch(email, pattern);
     }
 
+    public async Task<bool> UpdateProfile(UserRegistrationModel userRegistrationModel, int UserId)
+    {
+        try
+        {
+            // Ensure that the provided userRegistrationModel is not null
+            if (userRegistrationModel == null)
+            {
+                throw new ArgumentNullException(nameof(userRegistrationModel), "UserRegistrationModel cannot be null.");
+            }
+            //Check Emailformat Using Regex
+            if (!IsValidEmail(userRegistrationModel.Email))
+            {
+                throw new InvalidEmailFormatException("Invalid email format");
+            }
+
+            // Construct the UPDATE query
+            string updateQuery = @"
+            UPDATE Users
+            SET FirstName = @FirstName, LastName = @LastName, Email = @Email, Role = @Role
+            WHERE UserId = @UserId;
+        ";
+
+            // Hash the password if it's provided
+            string hashedPassword = !string.IsNullOrEmpty(userRegistrationModel.Password)
+                ? BCrypt.Net.BCrypt.HashPassword(userRegistrationModel.Password)
+                : null;
+
+            // Prepare the parameters for the query
+            var parameters = new
+            {
+                userRegistrationModel.FirstName,
+                userRegistrationModel.LastName,
+                userRegistrationModel.Email,
+                userRegistrationModel.Role,
+                UserId,
+                Password = hashedPassword // Include hashed password or null if not provided
+            };
+
+            // Execute the UPDATE query
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.ExecuteAsync(updateQuery, parameters);
+            }
+
+            return true; // Return true indicating successful update
+        }
+        catch (Exception ex)
+        {
+            // Catch any exceptions and wrap them in a RepositoryException
+            throw new RepositoryException("An error occurred while updating the user profile.", ex);
+        }
+    }
+
+
 }
 
