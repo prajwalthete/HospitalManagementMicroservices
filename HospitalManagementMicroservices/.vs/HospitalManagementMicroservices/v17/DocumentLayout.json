@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\dto\\userresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\dto\\userresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\dto\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\dto\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\entity\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\entity\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -20,18 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\service\\emailservicerl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\service\\emailservicerl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -86,31 +94,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UserResponseModel.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Dto\\UserResponseModel.cs",
+              "RelativeDocumentMoniker": "UserManagementService\\Dto\\UserResponseModel.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Dto\\UserResponseModel.cs",
+              "RelativeToolTip": "UserManagementService\\Dto\\UserResponseModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T10:27:31.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResponseModel.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Dto\\ResponseModel.cs",
+              "RelativeDocumentMoniker": "UserManagementService\\Dto\\ResponseModel.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Dto\\ResponseModel.cs",
+              "RelativeToolTip": "UserManagementService\\Dto\\ResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T10:25:18.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Entity\\UserEntity.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Entity\\UserEntity.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Entity\\UserEntity.cs",
               "RelativeToolTip": "UserManagementService\\Entity\\UserEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T06:11:06.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\AuthService.cs",
-              "RelativeDocumentMoniker": "UserManagementService\\Service\\AuthService.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\AuthService.cs",
-              "RelativeToolTip": "UserManagementService\\Service\\AuthService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T11:16:39.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "EmailServiceRL.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\EmailServiceRL.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Service\\EmailServiceRL.cs",
@@ -122,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Program.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Program.cs",
@@ -130,35 +152,63 @@
               "RelativeToolTip": "UserManagementService\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T10:40:04.557Z"
+              "WhenOpened": "2024-03-29T10:40:04.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Service\\UserService.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\UserService.cs",
               "RelativeToolTip": "UserManagementService\\Service\\UserService.cs",
-              "ViewState": "AQIAAPgAAAAAAAAAAAAuwBYBAAAzAAAA",
+              "ViewState": "AQIAADMBAAAAAAAAAAAuwE8BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T08:09:59.519Z"
+              "WhenOpened": "2024-03-29T08:09:59.519Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "IUser.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Interface\\IUser.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Interface\\IUser.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Interface\\IUser.cs",
               "RelativeToolTip": "UserManagementService\\Interface\\IUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAABUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T08:14:44.508Z"
+              "WhenOpened": "2024-03-29T08:14:44.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserManagementController.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Controllers\\UserManagementController.cs",
+              "RelativeDocumentMoniker": "UserManagementService\\Controllers\\UserManagementController.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Controllers\\UserManagementController.cs",
+              "RelativeToolTip": "UserManagementService\\Controllers\\UserManagementController.cs",
+              "ViewState": "AQIAAB0BAAAAAAAAAAAzwCwBAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T08:08:58.307Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "UserManagementService\\Service\\AuthService.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\AuthService.cs",
+              "RelativeToolTip": "UserManagementService\\Service\\AuthService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T11:16:39.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\appsettings.json",
               "RelativeDocumentMoniker": "UserManagementService\\appsettings.json",
@@ -170,20 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserManagementController.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Controllers\\UserManagementController.cs",
-              "RelativeDocumentMoniker": "UserManagementService\\Controllers\\UserManagementController.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Controllers\\UserManagementController.cs",
-              "RelativeToolTip": "UserManagementService\\Controllers\\UserManagementController.cs",
-              "ViewState": "AQIAAPcAAAAAAAAAAAAUwP4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T08:08:58.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "dbo.Users [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/UserManagementServiceDB/True/SqlTable/dbo.Users.sql",
               "ToolTip": "dbo.Users [Data]",
@@ -192,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Interface\\IAuthService.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Interface\\IAuthService.cs",
@@ -204,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "IEmail.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Interface\\IEmail.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Interface\\IEmail.cs",
@@ -216,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UserNotFoundException.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\GlobleExceptionhandler\\UserNotFoundException.cs",
               "RelativeDocumentMoniker": "UserManagementService\\GlobleExceptionhandler\\UserNotFoundException.cs",
@@ -228,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "UserManagementServiceContext.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Context\\UserManagementServiceContext.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Context\\UserManagementServiceContext.cs",

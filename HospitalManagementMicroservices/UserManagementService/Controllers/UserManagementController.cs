@@ -281,5 +281,45 @@ namespace UserManagementService.Controllers
         }
 
 
+        [Authorize]
+        [HttpGet("GetUserById")]
+        public async Task<IActionResult> GetUserById()
+        {
+            try
+            {
+                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                int UserId = Convert.ToInt32(userIdClaim);
+                var user = await _user.GetUserById(UserId);
+                if (user != null)
+                {
+                    var userResponse = new UserResponseModel
+                    {
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
+                        Email = user.Email,
+                        Role = user.Role
+                    };
+                    return Ok(new { Success = true, Message = "User found.", Data = userResponse });
+                }
+                else
+                {
+                    return NotFound(new { Success = false, Message = "User not found." });
+                }
+            }
+            catch (UserNotFoundException ex)
+            {
+                return NotFound(new { Success = false, Message = ex.Message });
+            }
+            catch (RepositoryException ex)
+            {
+                return StatusCode(500, new { Success = false, Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Success = false, Message = "An unexpected error occurred." });
+            }
+        }
+
+
     }
 }

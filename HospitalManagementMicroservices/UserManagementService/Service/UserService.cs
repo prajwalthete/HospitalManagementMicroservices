@@ -302,6 +302,38 @@ public class UserService : IUser
         }
     }
 
+    public async Task<UserRegistrationModel> GetUserById(int userId)
+    {
+        try
+        {
+            // Construct the SELECT query
+            string query = @"
+            SELECT *
+            FROM Users
+            WHERE UserId = @UserId;
+        ";
+
+            // Prepare the parameters for the query
+            var parameters = new { UserId = userId };
+
+            // Execute the SELECT query
+            using (var connection = _context.CreateConnection())
+            {
+                var user = await connection.QueryFirstOrDefaultAsync<UserRegistrationModel>(query, parameters);
+                if (user == null)
+                {
+                    throw new UserNotFoundException($"User with ID '{userId}' not found.");
+                }
+                return user;
+            }
+        }
+        catch (Exception ex)
+        {
+            // Catch any exceptions and wrap them in a RepositoryException
+            throw new RepositoryException("An error occurred while fetching user by ID.", ex);
+        }
+    }
+
 
 }
 
