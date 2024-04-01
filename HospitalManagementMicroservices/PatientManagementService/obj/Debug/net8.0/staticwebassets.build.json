@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "X0IHB6eh8NbXjWz3DGjtEPvPl+bX3UQN+B3Wy0ly5yM=",
+  "Source": "PatientManagementService",
+  "BasePath": "_content/PatientManagementService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
