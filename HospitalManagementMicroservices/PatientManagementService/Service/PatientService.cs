@@ -51,5 +51,27 @@ namespace PatientManagementService.Service
                 throw new PatientCreationException("An error occurred while creating a new patient.", ex);
             }
         }
+
+        public async Task<PatientResponseModel> GetPatientById(int userId)
+        {
+            try
+            {
+
+                string selectQuery = @"SELECT * FROM Patients WHERE PatientID = @UserId";
+
+                using (var connection = _context.CreateConnection())
+                {
+                    // ExecuteAsync method returns the patient details based on the provided userId
+                    var patient = await connection.QueryFirstOrDefaultAsync<PatientResponseModel>(selectQuery, new { UserId = userId });
+                    return patient;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions and wrap them in a custom exception if necessary
+                throw new PatientRetrievalException("An error occurred while retrieving patient details.", ex);
+            }
+        }
+
     }
 }

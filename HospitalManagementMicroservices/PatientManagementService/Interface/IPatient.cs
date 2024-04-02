@@ -6,7 +6,7 @@ namespace PatientManagementService.Interface
     public interface IPatient
     {
         public Task<PatientResponseModel> CreatePatientDetails(PatientEntity patientEntity, int UserID);
-        // public Task<PatientResponseModel> GetPatientDetails(int userId);
+        public Task<PatientResponseModel> GetPatientById(int userId);
 
 
     }

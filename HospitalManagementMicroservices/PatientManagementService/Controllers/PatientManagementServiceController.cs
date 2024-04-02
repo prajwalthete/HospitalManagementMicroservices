@@ -62,6 +62,34 @@ namespace PatientManagementService.Controllers
                 return StatusCode(500, response);
             }
         }
+
+        [Authorize(Roles = "Admin, Doctor,Patient")]
+        [HttpGet]
+        public async Task<IActionResult> GetPatientById()
+        {
+            try
+            {
+                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                int userId = Convert.ToInt32(userIdClaim);
+                var patient = await _patient.GetPatientById(userId);
+                if (patient != null)
+                {
+                    return Ok(new { Success = true, Message = "Patient found.", Data = patient });
+                }
+                else
+                {
+                    return NotFound(new { Success = false, Message = "Patient not found." });
+                }
+            }
+            catch (PatientRetrievalException ex)
+            {
+                return StatusCode(500, new { Success = false, Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Success = false, Message = "An unexpected error occurred." });
+            }
+        }
     }
 }
 
