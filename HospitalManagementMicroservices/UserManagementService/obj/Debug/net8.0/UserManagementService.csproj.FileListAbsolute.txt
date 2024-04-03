@@ -75,3 +75,5 @@ E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\Hospit
 E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\UserManagementService\bin\Debug\net8.0\NETCore.MailKit.dll
 E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\UserManagementService\bin\Debug\net8.0\BouncyCastle.Crypto.dll
 E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\UserManagementService\bin\Debug\net8.0\System.Net.Mail.Abstractions.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\UserManagementService\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\UserManagementService\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

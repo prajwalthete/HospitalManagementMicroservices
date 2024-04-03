@@ -7,6 +7,8 @@ using UserManagementService.Interface;
 
 namespace UserManagementService.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UserManagementController : Controller
     {
         private readonly IUser _user;
@@ -281,15 +283,19 @@ namespace UserManagementService.Controllers
         }
 
 
-        [Authorize]
+
+
+
+        // [Authorize]
         [HttpGet("GetUserById")]
-        public async Task<IActionResult> GetUserById()
+        public async Task<IActionResult> GetUserById(int UserId)
         {
             try
             {
-                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                int UserId = Convert.ToInt32(userIdClaim);
+                //var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                // int userId = Convert.ToInt32(userIdClaim);
                 var user = await _user.GetUserById(UserId);
+
                 if (user != null)
                 {
                     var userResponse = new UserResponseModel

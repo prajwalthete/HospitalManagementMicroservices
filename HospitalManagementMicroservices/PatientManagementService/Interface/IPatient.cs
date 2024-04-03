@@ -7,7 +7,7 @@ namespace PatientManagementService.Interface
     {
         public Task<PatientResponseModel> CreatePatientDetails(PatientEntity patientEntity, int UserID);
         public Task<PatientResponseModel> GetPatientById(int userId);
-
+        // public Task<PatientUserResponseModel> GetPatientDetails();
 
     }
 }

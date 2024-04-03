@@ -5,6 +5,7 @@ using PatientManagementService.Entity;
 using PatientManagementService.GlobleExceptionhandler;
 using PatientManagementService.Interface;
 using System.Security.Claims;
+using System.Text.Json;
 
 namespace PatientManagementService.Controllers
 {
@@ -13,10 +14,14 @@ namespace PatientManagementService.Controllers
     public class PatientManagementServiceController : ControllerBase
     {
         private readonly IPatient _patient;
+        private readonly HttpClient _httpClient;
 
-        public PatientManagementServiceController(IPatient patient)
+
+        public PatientManagementServiceController(IPatient patient, HttpClient httpClient)
         {
             _patient = patient;
+            _httpClient = httpClient;
+
         }
 
 
@@ -63,14 +68,15 @@ namespace PatientManagementService.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin, Doctor,Patient")]
-        [HttpGet]
+        [Authorize(Roles = "Admin,Patient")]
+        [HttpGet("GetPatientById")]
         public async Task<IActionResult> GetPatientById()
         {
             try
             {
                 var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 int userId = Convert.ToInt32(userIdClaim);
+
                 var patient = await _patient.GetPatientById(userId);
                 if (patient != null)
                 {
@@ -90,6 +96,50 @@ namespace PatientManagementService.Controllers
                 return StatusCode(500, new { Success = false, Message = "An unexpected error occurred." });
             }
         }
+
+
+
+        [Authorize(Roles = "Doctor,Admin")]
+        [HttpGet("GetPatientDetailss")]
+        public async Task<IActionResult> GetPatientDetails()
+        {
+            try
+            {
+                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                int userId = Convert.ToInt32(userIdClaim);
+
+                if (userId == 0)
+                {
+                    // Handle the case where userId is not valid
+                    return BadRequest(new { Success = false, Message = "Invalid user ID." });
+                }
+
+                var userResponse = await _httpClient.GetAsync($"https://localhost:7081/api/UserManagement/GetUserById?UserId={userId}");
+
+                if (userResponse.IsSuccessStatusCode)
+                {
+                    var content = await userResponse.Content.ReadAsStringAsync();
+                    var responseObject = JsonSerializer.Deserialize<Dto.Response<UserResponseModel>>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                    if (responseObject.Success)
+                    {
+                        return Ok(new { Success = true, Message = "Patient details retrieved successfully", Data = responseObject.Data });
+                    }
+                    else
+                    {
+                        return BadRequest(new { Success = false, Message = responseObject.Message });
+                    }
+                }
+                else
+                {
+                    return StatusCode(500, new { Success = false, Message = "Failed to retrieve user details" });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Success = false, Message = "An unexpected error occurred." });
+            }
+        }
+
     }
 }
-

@@ -68,3 +68,6 @@ E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\Hospit
 E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\PatientManagementService\obj\Debug\net8.0\PatientManagementService.genruntimeconfig.cache
 E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\PatientManagementService\obj\Debug\net8.0\ref\PatientManagementService.dll
 E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\PatientManagementService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\PatientManagementService\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\PatientManagementService\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\PatientManagementService\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
