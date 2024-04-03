@@ -3,48 +3,62 @@
   "WorkspaceRootPath": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\patientmanagementservice\\controllers\\patientmanagementservicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|solutionrelative:patientmanagementservice\\controllers\\patientmanagementservicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\doctormanagementservice\\interface\\idoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|solutionrelative:doctormanagementservice\\interface\\idoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\doctormanagementservice\\controllers\\doctormanagementservicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|solutionrelative:doctormanagementservice\\controllers\\doctormanagementservicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\doctormanagementservice\\service\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|solutionrelative:doctormanagementservice\\service\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\patientmanagementservice\\service\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|solutionrelative:patientmanagementservice\\service\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\patientmanagementservice\\interface\\ipatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|solutionrelative:patientmanagementservice\\interface\\ipatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/DoctorManagementServiceDB/True/SqlTable/dbo.Doctors.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\doctormanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|solutionrelative:doctormanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/UserManagementServiceDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\doctormanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|solutionrelative:doctormanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\doctormanagementservice\\entity\\doctorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|solutionrelative:doctormanagementservice\\entity\\doctorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\doctormanagementservice\\context\\doctormanagementservicecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|solutionrelative:doctormanagementservice\\context\\doctormanagementservicecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\patientmanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|solutionrelative:patientmanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\doctormanagementservice\\dto\\doctorresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}|DoctorManagementService\\DoctorManagementService.csproj|solutionrelative:doctormanagementservice\\dto\\doctorresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\patientmanagementservice\\patientmanagementservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|solutionrelative:patientmanagementservice\\patientmanagementservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\patientmanagementservice\\context\\patientmanagementservicecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|solutionrelative:patientmanagementservice\\context\\patientmanagementservicecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\patientmanagementservice\\dto\\patientresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|solutionrelative:patientmanagementservice\\dto\\patientresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\usermanagementservice\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43553251-AD9F-432C-AB39-F138CC484ABB}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\patientmanagementservice\\dto\\userresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|solutionrelative:patientmanagementservice\\dto\\userresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|e:\\.net workspace-1\\websites1\\2023\\2024\\microservicesdotnet\\microservices\\hospitalmanagementmicroservices\\patientmanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2A9B70AA-A322-4E6E-B9C5-D63B7D2A18E2}|PatientManagementService\\PatientManagementService.csproj|solutionrelative:patientmanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +68,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,139 +92,192 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Program.cs",
-              "RelativeDocumentMoniker": "UserManagementService\\Program.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Program.cs",
-              "RelativeToolTip": "UserManagementService\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAAwAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T06:44:56.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PatientResponseModel.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Dto\\PatientResponseModel.cs",
-              "RelativeDocumentMoniker": "PatientManagementService\\Dto\\PatientResponseModel.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Dto\\PatientResponseModel.cs",
-              "RelativeToolTip": "PatientManagementService\\Dto\\PatientResponseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T14:31:50.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserManagementController.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Controllers\\UserManagementController.cs",
-              "RelativeDocumentMoniker": "UserManagementService\\Controllers\\UserManagementController.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Controllers\\UserManagementController.cs",
-              "RelativeToolTip": "UserManagementService\\Controllers\\UserManagementController.cs",
-              "ViewState": "AQIAAPIAAAAAAAAAAAAcwCsBAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T06:19:54.489Z",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\appsettings.json",
+              "RelativeDocumentMoniker": "DoctorManagementService\\appsettings.json",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\appsettings.json",
+              "RelativeToolTip": "DoctorManagementService\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-03T18:36:50.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PatientManagementServiceController.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Controllers\\PatientManagementServiceController.cs",
-              "RelativeDocumentMoniker": "PatientManagementService\\Controllers\\PatientManagementServiceController.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Controllers\\PatientManagementServiceController.cs",
-              "RelativeToolTip": "PatientManagementService\\Controllers\\PatientManagementServiceController.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAuwJAAAAABAAAA",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "UserManagementService\\Service\\AuthService.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Service\\AuthService.cs",
+              "RelativeToolTip": "UserManagementService\\Service\\AuthService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowBwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T05:43:05.628Z",
+              "WhenOpened": "2024-04-03T18:07:48.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Program.cs",
-              "RelativeDocumentMoniker": "PatientManagementService\\Program.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Program.cs",
-              "RelativeToolTip": "PatientManagementService\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T06:28:52.043Z"
+              "Title": "dbo.Doctors [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/DoctorManagementServiceDB/True/SqlTable/dbo.Doctors.sql",
+              "ToolTip": "dbo.Doctors [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-03T17:59:09.014Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PatientService.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Service\\PatientService.cs",
-              "RelativeDocumentMoniker": "PatientManagementService\\Service\\PatientService.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Service\\PatientService.cs",
-              "RelativeToolTip": "PatientManagementService\\Service\\PatientService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwEQAAAAgAAAA",
+              "DocumentIndex": 7,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/UserManagementServiceDB/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-03T17:37:50.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorManagementServiceController.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Controllers\\DoctorManagementServiceController.cs",
+              "RelativeDocumentMoniker": "DoctorManagementService\\Controllers\\DoctorManagementServiceController.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Controllers\\DoctorManagementServiceController.cs",
+              "RelativeToolTip": "DoctorManagementService\\Controllers\\DoctorManagementServiceController.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAswHQAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T05:29:36.816Z",
+              "WhenOpened": "2024-04-03T17:34:50.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IPatient.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Interface\\IPatient.cs",
-              "RelativeDocumentMoniker": "PatientManagementService\\Interface\\IPatient.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Interface\\IPatient.cs",
-              "RelativeToolTip": "PatientManagementService\\Interface\\IPatient.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Service\\PatientService.cs",
+              "RelativeDocumentMoniker": "PatientManagementService\\Service\\PatientService.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Service\\PatientService.cs",
+              "RelativeToolTip": "PatientManagementService\\Service\\PatientService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAmwE4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T05:28:27.54Z",
+              "WhenOpened": "2024-04-03T17:25:36.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
+              "Title": "DoctorResponseModel.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Dto\\DoctorResponseModel.cs",
+              "RelativeDocumentMoniker": "DoctorManagementService\\Dto\\DoctorResponseModel.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Dto\\DoctorResponseModel.cs",
+              "RelativeToolTip": "DoctorManagementService\\Dto\\DoctorResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T17:22:25.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DoctorEntity.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Entity\\DoctorEntity.cs",
+              "RelativeDocumentMoniker": "DoctorManagementService\\Entity\\DoctorEntity.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Entity\\DoctorEntity.cs",
+              "RelativeToolTip": "DoctorManagementService\\Entity\\DoctorEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T17:13:21.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoctorService.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Service\\DoctorService.cs",
+              "RelativeDocumentMoniker": "DoctorManagementService\\Service\\DoctorService.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Service\\DoctorService.cs",
+              "RelativeToolTip": "DoctorManagementService\\Service\\DoctorService.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAywH8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T16:59:50.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IDoctor.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Interface\\IDoctor.cs",
+              "RelativeDocumentMoniker": "DoctorManagementService\\Interface\\IDoctor.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Interface\\IDoctor.cs",
+              "RelativeToolTip": "DoctorManagementService\\Interface\\IDoctor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T16:59:17.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Program.cs",
+              "RelativeDocumentMoniker": "DoctorManagementService\\Program.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Program.cs",
+              "RelativeToolTip": "DoctorManagementService\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T16:56:43.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PatientManagementService",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\PatientManagementService.csproj",
+              "RelativeDocumentMoniker": "PatientManagementService\\PatientManagementService.csproj",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\PatientManagementService.csproj",
+              "RelativeToolTip": "PatientManagementService\\PatientManagementService.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-03T16:56:43.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Program.cs",
+              "RelativeDocumentMoniker": "PatientManagementService\\Program.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Program.cs",
+              "RelativeToolTip": "PatientManagementService\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T16:55:17.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "PatientManagementServiceContext.cs",
               "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Context\\PatientManagementServiceContext.cs",
               "RelativeDocumentMoniker": "PatientManagementService\\Context\\PatientManagementServiceContext.cs",
               "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Context\\PatientManagementServiceContext.cs",
               "RelativeToolTip": "PatientManagementService\\Context\\PatientManagementServiceContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:49:38.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserResponseModel.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Dto\\UserResponseModel.cs",
-              "RelativeDocumentMoniker": "PatientManagementService\\Dto\\UserResponseModel.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\Dto\\UserResponseModel.cs",
-              "RelativeToolTip": "PatientManagementService\\Dto\\UserResponseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T06:39:50.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IUser.cs",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Interface\\IUser.cs",
-              "RelativeDocumentMoniker": "UserManagementService\\Interface\\IUser.cs",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\UserManagementService\\Interface\\IUser.cs",
-              "RelativeToolTip": "UserManagementService\\Interface\\IUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T11:35:00.922Z"
+              "WhenOpened": "2024-04-03T16:51:45.689Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\appsettings.json",
-              "RelativeDocumentMoniker": "PatientManagementService\\appsettings.json",
-              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\PatientManagementService\\appsettings.json",
-              "RelativeToolTip": "PatientManagementService\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-01T10:53:16.518Z"
+              "Title": "DoctorManagementServiceContext.cs",
+              "DocumentMoniker": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Context\\DoctorManagementServiceContext.cs",
+              "RelativeDocumentMoniker": "DoctorManagementService\\Context\\DoctorManagementServiceContext.cs",
+              "ToolTip": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\DoctorManagementService\\Context\\DoctorManagementServiceContext.cs",
+              "RelativeToolTip": "DoctorManagementService\\Context\\DoctorManagementServiceContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T16:51:38.68Z",
+              "EditorCaption": ""
             }
           ]
         }

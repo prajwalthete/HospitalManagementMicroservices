@@ -25,14 +25,13 @@ namespace PatientManagementService.Service
                 string insertQuery = @"
                     INSERT INTO Patients (PatientID, MedicalHistory, Insurance, Gender, DOB)
                     VALUES (@PatientID, @MedicalHistory, @Insurance, @Gender, @DOB);
-                    SELECT SCOPE_IDENTITY();
                 ";
 
                 // Execute the insert query
                 using (var connection = _context.CreateConnection())
                 {
                     // ExecuteAsync method returns the newly inserted patient ID
-                    var patient = await connection.ExecuteScalarAsync<PatientResponseModel>(insertQuery, new
+                    var patient = await connection.ExecuteAsync(insertQuery, new
                     {
                         PatientID = UserID,
                         patientEntity.MedicalHistory,
@@ -40,7 +39,13 @@ namespace PatientManagementService.Service
                         patientEntity.Gender,
                         patientEntity.DOB
                     });
-                    return patient;
+
+
+                    // Query the newly created patient record
+                    string selectQuery = "SELECT * FROM Patients WHERE PatientID = @PatientID";
+                    var createdPatient = await connection.QueryFirstOrDefaultAsync<PatientResponseModel>(selectQuery, new { PatientID = UserID });
+
+                    return createdPatient;
 
 
                 }

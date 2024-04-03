@@ -4,7 +4,6 @@ using PatientManagementService.Dto;
 using PatientManagementService.Entity;
 using PatientManagementService.GlobleExceptionhandler;
 using PatientManagementService.Interface;
-using System.Security.Claims;
 using System.Text.Json;
 
 namespace PatientManagementService.Controllers
@@ -25,57 +24,92 @@ namespace PatientManagementService.Controllers
         }
 
 
-
-        [HttpPost("UpdatePatientDetails")]
-        [Authorize(Roles = "Admin, Doctor,Patient")]
-        public async Task<IActionResult> UpdatePatientDetails(PatientEntity patientEntity)
+        [HttpPost("CreatePatient")]
+        public async Task<IActionResult> CreatePatient([FromBody] PatientEntity patientEntity, int UserID)
         {
             try
             {
-                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                int userId = Convert.ToInt32(userIdClaim);
+                // Get the user ID from the claims
+                //var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                //int userId = Convert.ToInt32(userIdClaim);
 
-                var patientResponse = await _patient.CreatePatientDetails(patientEntity, userId);
+                // Call the service method to create the patient
+                var createdPatient = await _patient.CreatePatientDetails(patientEntity, UserID);
 
-                var response = new ResponseModel<PatientResponseModel>
+                if (createdPatient != null)
                 {
-                    Success = true,
-                    Message = "Patient created successfully",
-                    Data = patientResponse
-                };
-
-                return Ok(response);
+                    return Ok(new { Success = true, Message = "Patient created successfully", Data = createdPatient });
+                }
+                else
+                {
+                    return StatusCode(500, new { Success = false, Message = "Failed to create patient" });
+                }
             }
             catch (PatientCreationException ex)
             {
-                var response = new ResponseModel<PatientResponseModel>
-                {
-                    Success = false,
-                    Message = ex.Message,
-                    Data = null
-                };
-                return StatusCode(500, response);
+                return StatusCode(500, new { Success = false, Message = ex.Message });
             }
             catch (Exception ex)
             {
-                var response = new ResponseModel<PatientResponseModel>
-                {
-                    Success = false,
-                    Message = "An unexpected error occurred",
-                    Data = null
-                };
-                return StatusCode(500, response);
+                return StatusCode(500, new { Success = false, Message = "An unexpected error occurred." });
             }
         }
 
-        [Authorize(Roles = "Admin,Patient")]
+
+
+        //[HttpPost("UpdatePatientDetails")]
+        //[Authorize(Roles = "Admin, Doctor")]
+        //public async Task<IActionResult> UpdatePatientDetails(int UserID, PatientEntity patientEntity)
+        //{
+        //    try
+        //    {
+        //        // var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        //        //int userId = Convert.ToInt32(userIdClaim);
+
+        //        var patientResponse = await _patient.CreatePatientDetails(patientEntity, UserID);
+
+
+        //        var response = new ResponseModel<PatientResponseModel>
+        //        {
+        //            Success = true,
+        //            Message = "Patient created successfully",
+        //            Data = patientResponse
+        //        };
+
+
+        //        return Ok(response);
+
+        //    }
+        //    catch (PatientCreationException ex)
+        //    {
+        //        var response = new ResponseModel<PatientResponseModel>
+        //        {
+        //            Success = false,
+        //            Message = ex.Message,
+        //            Data = null
+        //        };
+        //        return StatusCode(500, response);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        var response = new ResponseModel<PatientResponseModel>
+        //        {
+        //            Success = false,
+        //            Message = "An unexpected error occurred",
+        //            Data = null
+        //        };
+        //        return StatusCode(500, response);
+        //    }
+        //}
+
+        [Authorize]
         [HttpGet("GetPatientById")]
-        public async Task<IActionResult> GetPatientById()
+        public async Task<IActionResult> GetPatientById(int userId)
         {
             try
             {
-                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                int userId = Convert.ToInt32(userIdClaim);
+                //var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                //int userId = Convert.ToInt32(userIdClaim);
 
                 var patient = await _patient.GetPatientById(userId);
                 if (patient != null)
@@ -98,41 +132,58 @@ namespace PatientManagementService.Controllers
         }
 
 
-
         [Authorize(Roles = "Doctor,Admin")]
         [HttpGet("GetPatientDetailss")]
-        public async Task<IActionResult> GetPatientDetails()
+        public async Task<IActionResult> GetPatientDetails(int UserID)
         {
             try
             {
-                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                int userId = Convert.ToInt32(userIdClaim);
+                // var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                //int userId = Convert.ToInt32(userIdClaim);
 
-                if (userId == 0)
+                //if (userId == 0)
+                //{
+                //    // Handle the case where userId is not valid
+                //    return BadRequest(new { Success = false, Message = "Invalid user ID." });
+                //}
+
+                // Call the service layer method to get patient details
+                var patient = await _patient.GetPatientById(UserID);
+
+                if (patient != null)
                 {
-                    // Handle the case where userId is not valid
-                    return BadRequest(new { Success = false, Message = "Invalid user ID." });
-                }
+                    // Proceed with retrieving user details and combining them with patient details
+                    var userResponse = await _httpClient.GetAsync($"https://localhost:7081/api/UserManagement/GetUserById?UserId={UserID}");
 
-                var userResponse = await _httpClient.GetAsync($"https://localhost:7081/api/UserManagement/GetUserById?UserId={userId}");
-
-                if (userResponse.IsSuccessStatusCode)
-                {
-                    var content = await userResponse.Content.ReadAsStringAsync();
-                    var responseObject = JsonSerializer.Deserialize<Dto.Response<UserResponseModel>>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-
-                    if (responseObject.Success)
+                    if (userResponse.IsSuccessStatusCode)
                     {
-                        return Ok(new { Success = true, Message = "Patient details retrieved successfully", Data = responseObject.Data });
+                        var content = await userResponse.Content.ReadAsStringAsync();
+                        var responseObject = JsonSerializer.Deserialize<ResponseModel<UserResponseModel>>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                        if (responseObject.Success)
+                        {
+                            // Combine user and patient data into a single object
+                            var combinedData = new
+                            {
+                                UserData = responseObject.Data,
+                                PatientData = patient
+                            };
+
+                            return Ok(new { Success = true, Message = "User and Patient details retrieved successfully", Data = combinedData });
+                        }
+                        else
+                        {
+                            return BadRequest(new { Success = false, Message = responseObject.Message });
+                        }
                     }
                     else
                     {
-                        return BadRequest(new { Success = false, Message = responseObject.Message });
+                        return StatusCode(500, new { Success = false, Message = "Failed to retrieve user details" });
                     }
                 }
                 else
                 {
-                    return StatusCode(500, new { Success = false, Message = "Failed to retrieve user details" });
+                    return StatusCode(500, new { Success = false, Message = "Failed to retrieve patient details" });
                 }
             }
             catch (Exception ex)
@@ -140,6 +191,7 @@ namespace PatientManagementService.Controllers
                 return StatusCode(500, new { Success = false, Message = "An unexpected error occurred." });
             }
         }
+
 
     }
 }

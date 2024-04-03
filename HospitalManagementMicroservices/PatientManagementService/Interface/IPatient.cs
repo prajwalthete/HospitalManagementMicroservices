@@ -9,5 +9,6 @@ namespace PatientManagementService.Interface
         public Task<PatientResponseModel> GetPatientById(int userId);
         // public Task<PatientUserResponseModel> GetPatientDetails();
 
+
     }
 }
