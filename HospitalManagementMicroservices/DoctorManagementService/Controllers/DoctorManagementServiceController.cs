@@ -220,6 +220,42 @@ namespace DoctorManagementService.Controllers
         }
 
 
+        [Authorize(Roles = "Doctor, Admin, Patient")]
+        [HttpGet("GetPatientById")]
+        public async Task<IActionResult> GetPatientById(int userId)
+        {
+            try
+            {
+                string authorizationHeader = HttpContext.Request.Headers["Authorization"];
+                string[] parts = authorizationHeader.Split(' ');
+                string token = parts[1];
+
+                // Set the JWT token in the authorization header of the HttpClient
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                // Make a GET request to the GetPatientById endpoint
+                var response = await _httpClient.GetAsync($"https://localhost:7283/api/PatientManagementService/GetPatientById?userId={userId}");
+
+                // Check if the request was successful
+                if (response.IsSuccessStatusCode)
+                {
+                    // Read the response content
+                    var content = await response.Content.ReadAsStringAsync();
+
+                    // Handle the response accordingly
+                    return Ok(content);
+                }
+                else
+                {
+                    // Handle unsuccessful response
+                    return StatusCode((int)response.StatusCode, new { Success = false, Message = "Failed to retrieve patient details" });
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions
+                return StatusCode(500, new { Success = false, Message = $"An error occurred: {ex.Message}" });
+            }
+        }
 
 
 
