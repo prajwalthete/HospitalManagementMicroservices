@@ -1,9 +1,12 @@
-﻿using DoctorManagementService.Entity;
+﻿using DoctorManagementService.Dto;
+using DoctorManagementService.Entity;
 using DoctorManagementService.GlobleExceptionhandler;
 using DoctorManagementService.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http.Headers;
 using System.Security.Claims;
+using System.Text.Json;
 
 namespace DoctorManagementService.Controllers
 {
@@ -12,10 +15,12 @@ namespace DoctorManagementService.Controllers
     public class DoctorController : ControllerBase
     {
         private readonly IDoctor _doctorService;
+        private readonly HttpClient _httpClient;
 
-        public DoctorController(IDoctor doctorService)
+        public DoctorController(IDoctor doctorService, HttpClient httpClient)
         {
             _doctorService = doctorService;
+            _httpClient = httpClient;
         }
 
 
@@ -145,5 +150,120 @@ namespace DoctorManagementService.Controllers
                 return StatusCode(500, new { Success = false, Message = "An unexpected error occurred." });
             }
         }
+
+        [Authorize(Roles = "Doctor, Admin, Patient")]
+        [HttpGet("GetPatientDetails")]
+        public async Task<IActionResult> GetPatientDetails(int userId)
+        {
+            try
+            {
+                // Retrieve the JWT token from the authorization header
+                string authorizationHeader = HttpContext.Request.Headers["Authorization"];
+                string[] parts = authorizationHeader.Split(' ');
+                string token = parts[1];
+
+                // Set the JWT token in the authorization header of the HttpClient
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                // Make a GET request to the GetPatientDetails endpoint
+                var response = await _httpClient.GetAsync($"https://localhost:7283/api/PatientManagementService/GetPatientDetailss?UserID={userId}");
+
+                // Check if the request was successful
+                if (response.IsSuccessStatusCode)
+                {
+                    // Read the response content
+                    var content = await response.Content.ReadAsStringAsync();
+
+                    // Parse the JSON string in the 'data' field
+                    var parsedData = JsonSerializer.Deserialize<ResponseModel<dynamic>>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                    // Extract the inner user and patient data
+                    var userData = parsedData.Data.UserData;
+                    var patientData = parsedData.Data.PatientData;
+
+                    // Format the response with the extracted data
+                    return Ok(new
+                    {
+                        Success = true,
+                        Message = "User and Patient details retrieved successfully",
+                        Data = new
+                        {
+                            UserData = new
+                            {
+                                FirstName = userData.FirstName,
+                                LastName = userData.LastName,
+                                Email = userData.Email,
+                                Role = userData.Role
+                            },
+                            PatientData = new
+                            {
+                                PatientID = patientData.PatientID,
+                                MedicalHistory = patientData.MedicalHistory,
+                                Insurance = patientData.Insurance,
+                                Gender = patientData.Gender,
+                                DOB = patientData.DOB
+                            }
+                        }
+                    });
+                }
+                else
+                {
+                    // Handle unsuccessful response
+                    return StatusCode((int)response.StatusCode, new { Success = false, Message = "Failed to retrieve patient details" });
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions
+                return StatusCode(500, new { Success = false, Message = $"An error occurred: {ex.Message}" });
+            }
+        }
+
+
+
+
+
+
+
+        /*
+        [Authorize(Roles = "Doctor ,Admin,Patient")]
+        [HttpGet("GetPatientDetails")]
+        public async Task<OkObjectResult> GetPatientDetails(int userId)
+        {
+            try
+            {
+                string authorizationHeader = HttpContext.Request.Headers["Authorization"];
+                string[] parts = authorizationHeader.Split(' ');
+
+
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", parts[1]);
+                // Make a GET request to the GetPatientDetails endpoint
+                var response = await _httpClient.GetAsync($"https://localhost:7283/api/PatientManagementService/GetPatientDetailss?UserID={userId}");
+
+
+                // Check if the request was successful
+                if (response.IsSuccessStatusCode)
+                {
+                    // Read the response content
+                    var content = await response.Content.ReadAsStringAsync();
+                    // Handle the response accordingly
+                    return Ok(new { Success = true, Message = "Doctors retrieved successfully", Data = content });
+
+                    Console.WriteLine(content);
+                }
+                else
+                {
+                    // Handle unsuccessful response
+                    Console.WriteLine("Failed to retrieve patient details");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+        }
+        */
+
     }
 }

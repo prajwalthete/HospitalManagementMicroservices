@@ -4,6 +4,7 @@ namespace AppointmentManagementService.Entity
 {
     public class AppointmentEntity
     {
+        [JsonIgnore]
         public int AppointmentID { get; set; }
         public DateTime AppointmentDate { get; set; }
         [JsonIgnore]

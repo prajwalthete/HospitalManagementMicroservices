@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5oWlrQ/N4ZasCqWT265Pw9wOG5VX0WnIm49K4WijLMaA1t2By4WS6dHFZMHLRCHgfLmfv4PQQLj+Ixm+777rlg==",
+  "dgSpecHash": "on/Qd51lCbc5Tmfq5JkVieo/mL4yBWAM3JPxWnHYxa948oNh8vzMy1f6r2dLAjGqob5oY4OwsxRr2zrw6nNJnw==",
   "success": true,
   "projectFilePath": "E:\\.NET WORKSPACE-1\\Websites1\\2023\\2024\\MicroservicesDotNet\\MICROSERVICES\\HospitalManagementMicroservices\\AppointmentManagementService\\AppointmentManagementService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\prajw\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\prajw\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\prajw\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\prajw\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.3\\microsoft.aspnetcore.authentication.jwtbearer.8.0.3.nupkg.sha512",
     "C:\\Users\\prajw\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\prajw\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.0\\microsoft.data.sqlclient.5.2.0.nupkg.sha512",

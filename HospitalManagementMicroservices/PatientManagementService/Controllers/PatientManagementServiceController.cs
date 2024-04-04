@@ -132,7 +132,7 @@ namespace PatientManagementService.Controllers
         }
 
 
-        [Authorize(Roles = "Doctor,Admin")]
+        [Authorize]
         [HttpGet("GetPatientDetailss")]
         public async Task<IActionResult> GetPatientDetails(int UserID)
         {

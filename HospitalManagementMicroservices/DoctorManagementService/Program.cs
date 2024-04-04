@@ -18,7 +18,7 @@ builder.Services.AddScoped<IDoctor, DoctorService>();
 // Configure HttpClient
 builder.Services.AddHttpClient("ExternalService", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:7081/api/UserManagement/GetUserById"); // Replace with your external service base URL
+    client.BaseAddress = new Uri("https://localhost:7283/api/PatientManagementService/GetPatientDetailss?UserID"); // Replace with your external service base URL
     // Configure other HttpClient options if needed
 });
 
