@@ -22,8 +22,8 @@ namespace AppointmentManagementService.Controllers
 
 
         [Authorize(Roles = "Patient")]
-        [HttpPost("AddAppointment")]
-        public async Task<IActionResult> AddAppointment([FromBody] AppointmentEntity appointment, int DoctorID)
+        [HttpPost("BookAppointment")]
+        public async Task<IActionResult> BookAppointment([FromBody] AppointmentEntity appointment, int DoctorID)
         {
             try
             {

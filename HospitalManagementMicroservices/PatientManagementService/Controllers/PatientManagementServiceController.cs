@@ -25,6 +25,7 @@ namespace PatientManagementService.Controllers
 
 
         [HttpPost("CreatePatient")]
+        //[Authorize(Roles = "Doctor")] 
         public async Task<IActionResult> CreatePatient([FromBody] PatientEntity patientEntity, int UserID)
         {
             try
@@ -104,14 +105,14 @@ namespace PatientManagementService.Controllers
 
         [Authorize]
         [HttpGet("GetPatientById")]
-        public async Task<IActionResult> GetPatientById(int userId)
+        public async Task<IActionResult> GetPatientById(int patientId)
         {
             try
             {
                 //var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 //int userId = Convert.ToInt32(userIdClaim);
 
-                var patient = await _patient.GetPatientById(userId);
+                var patient = await _patient.GetPatientById(patientId);
                 if (patient != null)
                 {
                     return Ok(new { Success = true, Message = "Patient found.", Data = patient });
@@ -134,7 +135,7 @@ namespace PatientManagementService.Controllers
 
         [Authorize]
         [HttpGet("GetPatientDetailss")]
-        public async Task<IActionResult> GetPatientDetails(int UserID)
+        public async Task<IActionResult> GetPatientDetails(int PatientID)
         {
             try
             {
@@ -148,12 +149,12 @@ namespace PatientManagementService.Controllers
                 //}
 
                 // Call the service layer method to get patient details
-                var patient = await _patient.GetPatientById(UserID);
+                var patient = await _patient.GetPatientById(PatientID);
 
                 if (patient != null)
                 {
                     // Proceed with retrieving user details and combining them with patient details
-                    var userResponse = await _httpClient.GetAsync($"https://localhost:7081/api/UserManagement/GetUserById?UserId={UserID}");
+                    var userResponse = await _httpClient.GetAsync($"https://localhost:7081/api/UserManagement/GetUserById?UserId={PatientID}");
 
                     if (userResponse.IsSuccessStatusCode)
                     {

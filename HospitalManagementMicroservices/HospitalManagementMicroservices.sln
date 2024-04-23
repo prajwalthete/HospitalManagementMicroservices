@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagementService", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoctorManagementService", "DoctorManagementService\DoctorManagementService.csproj", "{10CDD8D8-40C2-45F4-8362-1FB88BF8028E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentManagementService", "AppointmentManagementService\AppointmentManagementService.csproj", "{C6B6F25C-4819-40C4-9BEE-4EC437224BDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentManagementService", "AppointmentManagementService\AppointmentManagementService.csproj", "{C6B6F25C-4819-40C4-9BEE-4EC437224BDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

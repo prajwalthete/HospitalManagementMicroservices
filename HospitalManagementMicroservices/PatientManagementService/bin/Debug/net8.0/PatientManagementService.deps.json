@@ -13,6 +13,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.3",
           "Microsoft.Data.SqlClient": "5.2.0",
           "Newtonsoft.Json": "13.0.3",
+          "Ocelot": "23.2.2",
           "Swashbuckle.AspNetCore": "6.4.0",
           "System.Net.Http.Json": "8.0.0"
         },
@@ -62,6 +63,22 @@
           }
         }
       },
+      "FluentValidation/11.8.0": {
+        "runtime": {
+          "lib/net7.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.8.0.0"
+          }
+        }
+      },
+      "IPAddressRange/6.0.0": {
+        "runtime": {
+          "lib/net8.0/IPAddressRange.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/6.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
@@ -87,6 +104,42 @@
           }
         }
       },
+      "Microsoft.AspNetCore.JsonPatch/8.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53112"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.MiddlewareAnalysis/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.MiddlewareAnalysis.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53112"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/8.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "8.0.0",
+          "Newtonsoft.Json": "13.0.3",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53112"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -95,6 +148,7 @@
           }
         }
       },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Data.SqlClient/5.2.0": {
         "dependencies": {
           "Azure.Identity": "1.10.3",
@@ -184,6 +238,18 @@
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {},
+      "Microsoft.Extensions.DiagnosticAdapter/3.1.32": {
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "6.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Microsoft.Extensions.DiagnosticAdapter.dll": {
+            "assemblyVersion": "3.1.32.0",
+            "fileVersion": "3.100.3222.56602"
+          }
+        }
+      },
       "Microsoft.Identity.Client/4.56.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Abstractions": "7.1.2"
@@ -306,6 +372,21 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.2.22727"
+          }
+        }
+      },
+      "Ocelot/23.2.2": {
+        "dependencies": {
+          "FluentValidation": "11.8.0",
+          "IPAddressRange": "6.0.0",
+          "Microsoft.AspNetCore.MiddlewareAnalysis": "8.0.0",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "8.0.0",
+          "Microsoft.Extensions.DiagnosticAdapter": "3.1.32"
+        },
+        "runtime": {
+          "lib/net8.0/Ocelot.dll": {
+            "assemblyVersion": "23.2.2.0",
+            "fileVersion": "23.2.2.0"
           }
         }
       },
@@ -473,6 +554,20 @@
       "path": "dapper/2.1.35",
       "hashPath": "dapper.2.1.35.nupkg.sha512"
     },
+    "FluentValidation/11.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TiEaaYqSIAS+wXQv46LRm8Mca092XYNePD0n231Hqlkmm5FuToZoWnjI1ef/vJUxBzqR7/k2vaVQXxijNgVKRQ==",
+      "path": "fluentvalidation/11.8.0",
+      "hashPath": "fluentvalidation.11.8.0.nupkg.sha512"
+    },
+    "IPAddressRange/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3vLppw2bi+LjM/M5TRQBrQ2kRYFge3+aphf5FiKefEImBG/sUM5sYV2TVYbWnZTHTnW24Gc5CucsohGu/GN9gQ==",
+      "path": "ipaddressrange/6.0.0",
+      "hashPath": "ipaddressrange.6.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNet.WebApi.Client/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -487,12 +582,40 @@
       "path": "microsoft.aspnetcore.authentication.jwtbearer/8.0.3",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.8.0.3.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.JsonPatch/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-klQdb/9+j0u8MDjoqHEgDCPz8GRhfsbRVvZIM3glFqjs8uY7S1hS9RvKZuz8o4dS9NsEpFp4Jccd8CQuIYHK0g==",
+      "path": "microsoft.aspnetcore.jsonpatch/8.0.0",
+      "hashPath": "microsoft.aspnetcore.jsonpatch.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.MiddlewareAnalysis/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Kw9LlAkglXH2ZJ7Ce90vhBwH+LaIk6M2RZmRDfiVLmjze5T/T4AFwdyZs9ToyXs9IqtDVSygex/uWNQCLR6NXQ==",
+      "path": "microsoft.aspnetcore.middlewareanalysis/8.0.0",
+      "hashPath": "microsoft.aspnetcore.middlewareanalysis.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/e5+eBvY759xiZJO+y1lHi4VzXqbDzTJSyCtKpaj3Ko2JAFQjiCOJ0ZHk2i4g4HpoSdXmzEXQsjr6dUX9U0/JA==",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/8.0.0",
+      "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.8.0.0.nupkg.sha512"
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "path": "microsoft.bcl.asyncinterfaces/1.1.1",
       "hashPath": "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.Data.SqlClient/5.2.0": {
       "type": "package",
@@ -514,6 +637,20 @@
       "sha512": "sha512-Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
       "path": "microsoft.extensions.apidescription.server/6.0.5",
       "hashPath": "microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DiagnosticAdapter/3.1.32": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oDv3wt+Q5cmaSfOQ3Cdu6dF6sn/x5gzWdNpOq4ajBwCMWYBr6CchncDvB9pF83ORlbDuX32MsVLOPGPxW4Lx4g==",
+      "path": "microsoft.extensions.diagnosticadapter/3.1.32",
+      "hashPath": "microsoft.extensions.diagnosticadapter.3.1.32.nupkg.sha512"
     },
     "Microsoft.Identity.Client/4.56.0": {
       "type": "package",
@@ -605,6 +742,13 @@
       "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    },
+    "Ocelot/23.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-izv+UM9zqiDpt3HzjGW8G7uZ9huSo7xIAgyAkfKYQ3Zs/Dg1PzQVRB++0vuKVko5fjml1QzqY8GHNebJN3nGaA==",
+      "path": "ocelot/23.2.2",
+      "hashPath": "ocelot.23.2.2.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.4.0": {
       "type": "package",

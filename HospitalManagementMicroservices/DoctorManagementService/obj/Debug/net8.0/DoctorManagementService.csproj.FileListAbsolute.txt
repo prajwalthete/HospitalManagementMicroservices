@@ -68,3 +68,12 @@ E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\Hospit
 E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\obj\Debug\net8.0\DoctorManagementService.pdb
 E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\obj\Debug\net8.0\DoctorManagementService.genruntimeconfig.cache
 E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\obj\Debug\net8.0\ref\DoctorManagementService.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\bin\Debug\net8.0\FluentValidation.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\bin\Debug\net8.0\IPAddressRange.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\MicroservicesDotNet\MICROSERVICES\HospitalManagementMicroservices\DoctorManagementService\bin\Debug\net8.0\Ocelot.dll
